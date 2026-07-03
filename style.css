@@ -1,0 +1,32 @@
+[ ] /* ตั้งค่าพื้นฐานให้ดูเป็นเกมมิ่ง */
+body {
+    background-color: #121212; /* สีดำเข้ม */
+    color: #00ffcc; /* สีตัวอักษรเขียวมินต์เท่ๆ */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* กล่องเกม */
+#game-container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 30px;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* ปรับแต่งช่องพิมพ์ */
+#input-field {
+    padding: 10px;
+    width: 80%;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #555;
+}
+[ ] 
