@@ -1,15 +1,16 @@
-[ ] <script>
-  const audio = new Audio('typing.mp3'); // ชื่อไฟล์เสียงของคุณ
-  const inputField = document.querySelector('input'); // ช่องสำหรับพิมพ์
+[ ] <!-- ในไฟล์ index.html ให้ใส่แค่ส่วนนี้ -->
+<h1>Type this!</h1>
+<input type="text" id="typeInput">
+<p>Score: <span id="score">0</span></p>
+<p>Created by: กาฟิว & เจมินาย</p>
 
-  inputField.addEventListener('input', () => {
-    audio.currentTime = 0; // รีเซ็ตเสียงให้เล่นใหม่ทุกครั้งที่พิมพ์
+<script>
+  const audio = new Audio('https://www.soundjay.com/mechanical/sounds/keyboard-key-press-01.mp3');
+  const input = document.getElementById('typeInput');
+  input.oninput = () => {
     audio.play();
-  });
+    document.getElementById('score').innerText++;
+  };
 </script>
-[ ] <!-- ส่วนแสดง End Credit -->
-<footer style="text-align: center; margin-top: 50px; padding: 20px; font-family: Arial, sans-serif; color: #555;">
-    <p>Created by: <strong>กาฟิว</strong> & <strong>เจมินาย</strong></p>
-    <p>© 2026 Game Development Project</p>
-</footer>
+[ ] 
 [ ] 
